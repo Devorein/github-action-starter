@@ -10,17 +10,16 @@
     "transpile": "npx tsc",
     "test": "npx jest"
   },
-  "repository": {
+  "gh_repo": {
     "type": "git",
-    "url": "git+https://github.com/[username]/[repository]"
+    "url": "git+https://github.com/[gh_username]/[gh_repo]"
   },
   "keywords": [],
-  "author": "[author_name] <[email]>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/[username]/[repository]/issues"
+    "url": "https://github.com/[gh_username]/[gh_repo]/issues"
   },
-  "homepage": "https://github.com/[username]/[repository]#readme",
+  "homepage": "https://github.com/[gh_username]/[gh_repo]#readme",
   "dependencies": {
     "@actions/core": "^1.4.0"
   },
