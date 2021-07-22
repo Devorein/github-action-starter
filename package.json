@@ -1,0 +1,37 @@
+{
+  "name": "github-action-name",
+  "version": "1.0.0",
+  "description": "A github action to do this and that",
+  "main": "dist/index.js",
+  "scripts": {
+    "prebuild": "npm run format && npm run transpile",
+    "build": "npx ncc build ./src/index.ts -o dist -t",
+    "format": "npx prettier --write src/**/*.ts",
+    "transpile": "npx tsc",
+    "test": "npx jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/<username>/<repository>"
+  },
+  "keywords": [],
+  "author": "Safwan Shaheer <devorein00@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/<username>/<repository>/issues"
+  },
+  "homepage": "https://github.com/<username>/<repository>#readme",
+  "dependencies": {
+    "@actions/core": "^1.2.7"
+  },
+  "devDependencies": {
+    "@nishans/types": "^0.0.35",
+    "@types/jest": "^26.0.23",
+    "@types/node": "^15.0.1",
+    "jest": "^26.6.3",
+    "prettier": "^2.2.1",
+    "ts-jest": "^26.5.5",
+    "@vercel/ncc": "^0.28.5",
+    "typescript": "^4.2.4"
+  }
+}
